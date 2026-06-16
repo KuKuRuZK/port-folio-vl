@@ -1,0 +1,8 @@
+
+# Application-specific materials (not part of public portfolio)
+generate_*_application.py
+*_Resume_*.pdf
+*_CoverLetter_*.pdf
+build_jobs_xlsx.py
+resume_b64.txt
+*.xlsx
