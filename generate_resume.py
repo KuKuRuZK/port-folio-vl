@@ -45,7 +45,8 @@ flow = []
 flow.append(Paragraph("VLADYSLAV SOBAKAR", styles['name']))
 flow.append(Paragraph("Python Engineer", styles['role']))
 flow.append(Paragraph(
-    "+37062112974&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;vladyslavsobakar@gmail.com&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;Vilnius, Lithuania",
+    "+37062112974&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;vladyslavsobakar@gmail.com&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;"
+    "Vilnius, Lithuania&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;@VVVladyslavvv",
     styles['contact']
 ))
 
@@ -72,6 +73,7 @@ skill_rows = [
 ]
 for label, rest in skill_rows:
     flow.append(Paragraph(f"<b>{label}</b> {rest}", styles['body']))
+flow.append(Paragraph("<b>Languages:</b> English, Ukrainian, Russian", styles['body']))
 
 # WORK EXPERIENCE
 flow += section("WORK EXPERIENCE")
@@ -80,35 +82,35 @@ flow.append(Paragraph("WinWin.travel  |  May 2026 – Present", styles['job_meta
 flow.append(bullets([
     "Develop and maintain Python FastAPI microservices behind an AI-powered travel assistant",
     "Implement LLM tool/action orchestration (OpenAI) to select and run the right action per user request",
-    "Designed an async request flow (202 Accepted + background processing + backend callbacks)",
     "Maintain a shared action contract consumed by both Python and Java/Spring services",
     "Containerize services with Docker, manage dependencies with uv, and write tests with pytest",
+]))
+
+flow.append(Paragraph("Freelance Web Developer", styles['job_title']))
+flow.append(Paragraph("Self-employed  |  December 2024 – Present", styles['job_meta']))
+flow.append(bullets([
+    "Built and customized responsive websites for clients using Wix and WordPress",
+    "Automated client workflows, including an online booking system",
+    "Designed clean, user-friendly interfaces tailored to each client's needs",
 ]))
 
 flow.append(Paragraph("Python Instructor", styles['job_title']))
 flow.append(Paragraph("GOITeens  |  October 2024 – June 2025", styles['job_meta']))
 flow.append(bullets([
     "Delivered structured Python instruction focused on data handling, logic, and problem-solving",
-    "Explained programming concepts related to variables, control structures, and basic data processing",
+    "Guided students of varying levels, simplifying complex programming topics",
     "Reviewed and corrected student code to improve accuracy, structure, and efficiency",
-    "Assisted learners in debugging and understanding errors in their programs",
 ]))
 
 # EDUCATION
 flow += section("EDUCATION")
-flow.append(Paragraph("Vilnius Gediminas Technical University  |  2024–2027", styles['small_grey']))
-flow.append(Paragraph("Multimedia Design", styles['job_title']))
-flow.append(Paragraph(
-    "Relevant focus areas include data visualization, digital tools, and analytical thinking applied to media and projects.",
-    styles['body']
-))
-flow.append(Spacer(1, 4))
-flow.append(Paragraph("Mykolo Romerio Universitetas  |  2022–2024", styles['small_grey']))
-flow.append(Paragraph("Game Development and Digital Animation", styles['job_title']))
-flow.append(Paragraph(
-    "Developed problem-solving skills, logical thinking, and technical foundations relevant to data and technology-focused roles.",
-    styles['body']
-))
+flow.append(Paragraph("<b>Multimedia Design</b>  —  Vilnius Gediminas Technical University  |  2024–2027", styles['body']))
+flow.append(Paragraph("<b>Game Development and Digital Animation</b>  —  Mykolo Romerio Universitetas  |  2022–2024", styles['body']))
+
+# COURSES
+flow += section("COURSES")
+flow.append(Paragraph("<b>Data Analyst</b> — Mate Academy  |  March – August 2025", styles['body']))
+flow.append(Paragraph("<b>Python-Developer</b> — Polygon  |  March – June 2021", styles['body']))
 
 # PROJECTS
 flow += section("PROJECTS")
