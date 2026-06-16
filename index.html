@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PORTFOLIO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">PORT<span style="color:var(--pink)">.</span>FOLIO</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" data-en="ABOUT" data-uk="ПРО МЕНЕ">ABOUT</a></li>
+    <li><a href="#skills" data-en="SKILLS" data-uk="НАВИЧКИ">SKILLS</a></li>
+    <li><a href="#projects" data-en="PROJECTS" data-uk="ПРОЄКТИ">PROJECTS</a></li>
+    <li><a href="#education" data-en="EDUCATION" data-uk="ОСВІТА">EDUCATION</a></li>
+    <li><a href="#experience" data-en="EXPERIENCE" data-uk="ДОСВІД">EXPERIENCE</a></li>
+    <li><a href="#contact" data-en="CONTACT" data-uk="КОНТАКТ">CONTACT</a></li>
+  </ul>
+  <button class="lang-toggle" id="langBtn" onclick="toggleLang()">🌐 УКР</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-clouds"></div>
+
+  <!-- Floating pixels -->
+  <div class="floating-pixel" style="width:16px;height:16px;left:10%;top:20%;animation-duration:3s;animation-delay:0s;"></div>
+  <div class="floating-pixel yellow" style="width:24px;height:24px;left:85%;top:30%;animation-duration:4s;animation-delay:1s;"></div>
+  <div class="floating-pixel black" style="width:12px;height:12px;left:70%;top:60%;animation-duration:2.5s;animation-delay:0.5s;"></div>
+  <div class="floating-pixel" style="width:8px;height:8px;left:30%;top:70%;animation-duration:3.5s;animation-delay:1.5s;"></div>
+  <div class="floating-pixel yellow" style="width:16px;height:16px;left:50%;top:15%;animation-duration:5s;animation-delay:2s;"></div>
+  <div class="floating-pixel" style="width:20px;height:20px;left:5%;top:55%;animation-duration:4s;animation-delay:0.8s;"></div>
+
+  <h1 class="hero-title">VLADYSLAV<span>_</span><br>SOBAKAR</h1>
+  <p class="hero-subtitle" data-en="JUNIOR DATA ANALYST · PYTHON · SQL<br>VILNIUS, LITHUANIA" data-uk="JUNIOR DATA ANALYST · PYTHON · SQL<br>ВІЛЬНЮС, ЛИТВА">JUNIOR DATA ANALYST · PYTHON · SQL<br>VILNIUS, LITHUANIA</p>
+  <div class="pixel-character">👾</div>
+  <a href="#about" class="press-start-btn">Press start</a>
+
+  <div class="scroll-indicator">
+    <span class="scroll-arrow">▼ ▼ ▼</span>
+  </div>
+  
+
+  <div class="pixel-ground"></div>
+  <div class="pixel-ground-pink"></div>
+</section>
+
+<div class="pixel-divider"></div>
+
+<!-- ABOUT -->
+<section id="about" class="page-section" style="position:relative;">
+  <canvas class="bg-canvas" id="canvasAbout"></canvas>
+  <div style="max-width:1000px;margin:0 auto;">
+    <h2 class="section-title" data-en="WHO<br>AM <span class='accent'>I?</span>" data-uk="ХТО<br>Я <span class='accent'>ТАКИЙ?</span>">WHO<br>AM <span class="accent">I?</span></h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p data-en="Hi! I'm <span class='highlight'>Vladyslav Sobakar</span>, a <span class='highlight-y'>Junior Data Analyst</span> from Vilnius." data-uk="Привіт! Я — <span class='highlight'>Vladyslav Sobakar</span>, <span class='highlight-y'>Junior Data Analyst</span> з Вільнюса.">Hi! I'm <span class="highlight">Vladyslav Sobakar</span>, a <span class="highlight-y">Junior Data Analyst</span> from Vilnius.</p>
+        <br>
+        <p data-en="Third-year student with experience in <span class='highlight'>Python, SQL & BigQuery</span>. I build dashboards, write queries and analyze data." data-uk="Студент третього курсу з досвідом у <span class='highlight'>Python, SQL та BigQuery</span>. Будую дашборди, пишу запити та аналізую дані.">Third-year student with experience in <span class="highlight">Python, SQL & BigQuery</span>. I build dashboards, write queries and analyze data.</p>
+        <br>
+        <p data-en="Also taught Python at <span class='highlight-y'>GOITeens</span> and work on freelance projects 🚀" data-uk="Також викладав Python у <span class='highlight-y'>GOITeens</span> і займаюсь фріланс-проєктами 🚀">Also taught Python at <span class="highlight-y">GOITeens</span> and work on freelance projects 🚀</p>
+      </div>
+      <div>
+        <div class="pixel-avatar">👾</div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div class="pixel-divider yellow"></div>
+
+<!-- SKILLS -->
+<section id="skills" class="page-section" style="position:relative;">
+  <canvas class="bg-canvas" id="canvasSkills"></canvas>
+  <div style="max-width:1000px;margin:0 auto;">
+    <h2 class="section-title" data-en="MY<br><span style='color:var(--pink)'>SKILLS</span>" data-uk="МОЇ<br><span style='color:var(--pink)'>НАВИЧКИ</span>">MY<br><span style="color:var(--pink)">SKILLS</span></h2>
+    <div class="skills-grid">
+      <div class="skill-card" data-skill="python" style="cursor:pointer;">
+        <span class="skill-icon">🐍</span>
+        <div class="skill-name">PYTHON</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:85%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="sql" style="cursor:pointer;">
+        <span class="skill-icon">🗄️</span>
+        <div class="skill-name">SQL / BIGQUERY</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:80%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="tableau" style="cursor:pointer;">
+        <span class="skill-icon">📊</span>
+        <div class="skill-name">TABLEAU</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:75%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="excel" style="cursor:pointer;">
+        <span class="skill-icon">📈</span>
+        <div class="skill-name">EXCEL</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:90%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="webdev" style="cursor:pointer;">
+        <span class="skill-icon">🌐</span>
+        <div class="skill-name">HTML / CSS / JS</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:70%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="unity" style="cursor:pointer;">
+        <span class="skill-icon">🎮</span>
+        <div class="skill-name">UNITY</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:72%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="3d" style="cursor:pointer;">
+        <span class="skill-icon">🧊</span>
+        <div class="skill-name">3D MODELLING</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:75%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="figma" style="cursor:pointer;">
+        <span class="skill-icon">🎨</span>
+        <div class="skill-name">FIGMA / UI DESIGN</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:80%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="pixel-divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects" class="page-section" style="position:relative;">
+  <canvas class="bg-canvas" id="canvasProjects"></canvas>
+  <div style="max-width:1100px;margin:0 auto;">
+    <h2 class="section-title" data-en="MY<br><span class='accent-y'>PROJECTS</span>" data-uk="МОЇ<br><span class='accent-y'>ПРОЄКТИ</span>">MY<br><span class="accent-y">PROJECTS</span></h2>
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterProjects('all')" data-en="ALL" data-uk="УСІ">ALL</button>
+      <button class="filter-btn" onclick="filterProjects('data')" data-en="DATA" data-uk="ДАНІ">DATA</button>
+      <button class="filter-btn" onclick="filterProjects('3d')" data-en="3D" data-uk="3D">3D</button>
+      <button class="filter-btn" onclick="filterProjects('games')" data-en="GAMES" data-uk="ІГРИ">GAMES</button>
+    </div>
+    <div class="projects-grid" id="projectsGrid">
+
+      <div class="project-card" data-cat="data" data-project="bigquery">
+        <div class="project-thumb card-slider" data-key="bigquery" style="background:#1a1a2e;overflow:hidden;padding:0;cursor:pointer;">
+          <div class="card-slides"></div>
+          <div class="card-dots"></div>
+        </div>
+        <div class="project-info">
+          <div class="project-name">PROJECT 01</div>
+          <div class="project-desc">End-to-End User Data Analysis — Google BigQuery. Relational tables, JOIN, GROUP BY, aggregations.</div>
+          <div class="project-tags">
+            <span class="tag">SQL</span>
+            <span class="tag y">BIGQUERY</span>
+            <span class="tag">DATA ANALYSIS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="data" data-project="netflix">
+        <div class="project-thumb card-slider" data-key="netflix" style="background:#e50914;overflow:hidden;padding:0;cursor:pointer;">
+          <div class="card-slides"></div>
+          <div class="card-dots"></div>
+        </div>
+        <div class="project-info">
+          <div class="project-name">PROJECT 02</div>
+          <div class="project-desc">Netflix Content Analysis Dashboard — Tableau. Visualized content by type, country & release year.</div>
+          <div class="project-tags">
+            <span class="tag y">TABLEAU</span>
+            <span class="tag">DASHBOARD</span>
+            <span class="tag">DATA VIZ</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="3d" data-project="samurai">
+        <div class="project-thumb card-slider" data-key="samurai" style="background:#2c1810;overflow:hidden;padding:0;cursor:pointer;">
+          <div class="card-slides"></div>
+          <div class="card-dots"></div>
+        </div>
+        <div class="project-info">
+          <div class="project-name">PROJECT 03</div>
+          <div class="project-desc" data-en="High-Poly Samurai — stylized 3D character with detailed armor, katana & cloth simulation." data-uk="High-Poly Самурай — стилізований 3D персонаж з деталізованою бронею, катаною та симуляцією тканини.">High-Poly Samurai — stylized 3D character with detailed armor, katana & cloth simulation.</div>
+          <div class="project-tags">
+            <span class="tag y">3D MODELLING</span>
+            <span class="tag">HIGH-POLY</span>
+            <span class="tag">CHARACTER</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="3d" data-project="kimono">
+        <div class="project-thumb card-slider" data-key="kimono" style="background:#1a1a2e;overflow:hidden;padding:0;cursor:pointer;">
+          <div class="card-slides"></div>
+          <div class="card-dots"></div>
+        </div>
+        <div class="project-info">
+          <div class="project-name">PROJECT 04</div>
+          <div class="project-desc" data-en="Low-Poly Kimono Girl — stylized female warrior with floral kimono, naginata & turnaround sheet." data-uk="Low-Poly Кімоно Дівчина — стилізована воїтелька з квітковим кімоно, нагінатою та розгорткою.">Low-Poly Kimono Girl — stylized female warrior with floral kimono, naginata & turnaround sheet.</div>
+          <div class="project-tags">
+            <span class="tag y">3D MODELLING</span>
+            <span class="tag">LOW-POLY</span>
+            <span class="tag">CHARACTER</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="games" data-project="nastalgia">
+        <div class="project-thumb card-slider" data-key="nastalgia" style="background:#0d1117;overflow:hidden;padding:0;cursor:pointer;">
+          <div class="card-slides"></div>
+          <div class="card-dots"></div>
+        </div>
+        <div class="project-info">
+          <div class="project-name">PROJECT 05</div>
+          <div class="project-desc" data-en="Not Nastalgia — Unity game exploring themes of memory and nostalgia through gameplay." data-uk="Not Nastalgia — гра на Unity про теми пам'яті та ностальгії через геймплей.">Not Nastalgia — Unity game exploring themes of memory and nostalgia through gameplay.</div>
+          <div class="project-tags">
+            <span class="tag y">UNITY</span>
+            <span class="tag">GAME DEV</span>
+            <span class="tag">C#</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="games" data-project="suwuside">
+        <div class="project-thumb card-slider" data-key="suwuside" style="background:#1a0020;overflow:hidden;padding:0;cursor:pointer;">
+          <div class="card-slides"></div>
+          <div class="card-dots"></div>
+        </div>
+        <div class="project-info">
+          <div class="project-name">PROJECT 06</div>
+          <div class="project-desc" data-en="sUwUside Hotline — Game Maker game with a unique aesthetic and narrative-driven design." data-uk="sUwUside Hotline — гра на Game Maker з унікальною естетикою та наративним дизайном.">sUwUside Hotline — Game Maker game with a unique aesthetic and narrative-driven design.</div>
+          <div class="project-tags">
+            <span class="tag y">GAME MAKER</span>
+            <span class="tag">GAME DEV</span>
+            <span class="tag">NARRATIVE</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="pixel-divider"></div>
+
+<!-- EDUCATION -->
+<section id="education" class="page-section" style="background: var(--black); min-height: calc(100vh - 24px); padding: 80px 40px; display:flex; align-items:center; position:relative;">
+  <canvas class="bg-canvas" id="canvasEducation"></canvas>
+  <div style="max-width:1000px;margin:0 auto;width:100%">
+    <h2 class="section-title" data-en="MY<br><span class='accent'>EDUCATION</span>" data-uk="МОЯ<br><span class='accent'>ОСВІТА</span>">MY<br><span class="accent">EDUCATION</span></h2>
+    <div style="display:flex;flex-direction:column;gap:24px;">
+
+      <div style="border:4px solid var(--yellow);padding:24px;transition:transform 0.1s,box-shadow 0.1s;cursor:pointer;" onclick="openEduModal('vgtu')" onmouseover="this.style.transform='translate(-4px,-4px)';this.style.boxShadow='8px 8px 0 var(--yellow)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:9px;color:var(--yellow);margin-bottom:8px;">2024 — 2027</div>
+        <div style="font-size:13px;color:var(--white);margin-bottom:8px;">MULTIMEDIA DESIGN</div>
+        <div style="font-family:'VT323',monospace;font-size:20px;color:#aaa;">Vilnius Gediminas Technical University</div>
+        <div style="font-family:'VT323',monospace;font-size:17px;color:#666;margin-top:6px;" data-en="Data visualization, digital tools, analytical thinking → click for more" data-uk="Візуалізація даних, цифрові інструменти, аналітичне мислення → клік для деталей">Data visualization, digital tools, analytical thinking → click for more</div>
+      </div>
+
+      <div style="border:4px solid var(--pink);padding:24px;transition:transform 0.1s,box-shadow 0.1s;cursor:pointer;" onclick="openEduModal('mru')" onmouseover="this.style.transform='translate(-4px,-4px)';this.style.boxShadow='8px 8px 0 var(--pink)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:9px;color:var(--pink);margin-bottom:8px;">2022 — 2024</div>
+        <div style="font-size:13px;color:var(--white);margin-bottom:8px;">GAME DEVELOPMENT & DIGITAL ANIMATION</div>
+        <div style="font-family:'VT323',monospace;font-size:20px;color:#aaa;">Mykolo Romerio Universitetas</div>
+        <div style="font-family:'VT323',monospace;font-size:17px;color:#666;margin-top:6px;" data-en="Problem-solving, logical thinking, technical foundations → click for more" data-uk="Вирішення задач, логічне мислення, технічна база → клік для деталей">Problem-solving, logical thinking, technical foundations → click for more</div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+</section>
+
+<div class="pixel-divider"></div>
+
+<!-- WORK EXPERIENCE -->
+<section id="experience" class="page-section" style="background: var(--yellow); min-height: calc(100vh - 24px); padding: 80px 40px; display:flex; align-items:center; position:relative;">
+  <canvas class="bg-canvas" id="canvasExperience"></canvas>
+  <div style="max-width:1000px;margin:0 auto;width:100%">
+    <h2 class="section-title" style="color:var(--black);" data-en="WORK<br><span style='color:var(--pink)'>EXPERIENCE</span>" data-uk="ДОСВІД<br><span style='color:var(--pink)'>РОБОТИ</span>">WORK<br><span style="color:var(--pink)">EXPERIENCE</span></h2>
+
+    <div style="display:flex;flex-direction:column;gap:0;">
+
+      <!-- Timeline item -->
+      <div style="display:grid;grid-template-columns:140px 1fr;gap:0;position:relative;">
+        <!-- Left: date + line -->
+        <div style="display:flex;flex-direction:column;align-items:center;padding-top:4px;">
+          <div style="font-size:8px;color:var(--black);text-align:center;line-height:1.6;">OCT 2024<br>—<br>JUN 2025</div>
+          <div style="width:4px;background:var(--black);flex:1;margin-top:12px;"></div>
+        </div>
+        <!-- Right: card -->
+        <div style="border:4px solid var(--black);background:var(--black);padding:24px;margin-bottom:24px;transition:transform 0.1s,box-shadow 0.1s;cursor:pointer;" onclick="openWorkModal('goiteens')"
+          onmouseover="this.style.transform='translate(-4px,-4px)';this.style.boxShadow='8px 8px 0 var(--pink)'"
+          onmouseout="this.style.transform='';this.style.boxShadow=''">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:12px;">
+            <div style="font-size:12px;color:var(--yellow);">PYTHON INSTRUCTOR</div>
+            <div style="font-size:9px;color:var(--pink);background:rgba(255,45,120,0.15);padding:4px 10px;border:1px solid var(--pink);">GOITeens</div>
+          </div>
+          <div style="font-family:'VT323',monospace;font-size:18px;color:#ccc;line-height:1.6;" data-en="· Delivered structured Python lessons on data handling, logic & problem-solving<br>· Explained variables, control structures & basic data processing<br>· Reviewed & corrected code to improve accuracy and efficiency<br>· Assisted learners in debugging Python programs → click for more" data-uk="· Проводив структуровані уроки Python з обробки даних, логіки та вирішення задач<br>· Пояснював змінні, керуючі структури та базову обробку даних<br>· Переглядав та виправляв код для підвищення точності й ефективності<br>· Допомагав учням у відлагодженні Python-програм → клік для деталей">· Delivered structured Python lessons on data handling, logic & problem-solving<br>· Explained variables, control structures & basic data processing<br>· Reviewed & corrected code to improve accuracy and efficiency<br>· Assisted learners in debugging Python programs → click for more</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;">
+            <span style="font-size:8px;padding:4px 8px;background:var(--pink);color:var(--black);">PYTHON</span>
+            <span style="font-size:8px;padding:4px 8px;background:var(--yellow);color:var(--black);">TEACHING</span>
+            <span style="font-size:8px;padding:4px 8px;background:var(--pink);color:var(--black);">DEBUGGING</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more jobs here in future -->
+      <div style="display:grid;grid-template-columns:140px 1fr;gap:0;">
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div style="width:4px;height:24px;background:var(--black);"></div>
+          <div style="width:16px;height:16px;background:var(--black);transform:rotate(45deg);"></div>
+        </div>
+        <div style="padding-top:8px;font-family:'VT323',monospace;font-size:20px;color:#555;" data-en="More coming soon..." data-uk="Більше незабаром...">More coming soon...</div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<div class="pixel-divider yellow"></div>
+
+<!-- CONTACT -->
+<section id="contact" class="page-section" style="position:relative;">
+  <canvas class="bg-canvas" id="canvasContact"></canvas>
+  <h2 class="section-title" data-en="GET IN<br><span style='color:var(--yellow)'>TOUCH</span>" data-uk="ЗВ'ЯЖИСЬ<br>ЗІ <span style='color:var(--yellow)'>МНОЮ</span>">GET IN<br><span style="color:var(--yellow)">TOUCH</span></h2>
+  <p class="contact-subtitle" data-en="Have a project? Let's build something great together!" data-uk="Маєш проєкт? Давай створимо щось круте разом!">Have a project? Let's build something great together!</p>
+  <div class="contact-links">
+    <a href="mailto:vladyslavsobakar@gmail.com" class="contact-btn">📧 EMAIL</a>
+    <a href="tel:+37062112974" class="contact-btn">📞 +37062112974</a>
+    <a href="https://www.linkedin.com/in/vladyslav-sobakar-8a2216312" target="_blank" class="contact-btn">🔗 LINKEDIN</a>
+    <a href="https://github.com/KuKuRuZK" class="contact-btn">🐙 GITHUB</a>
+  </div>
+
+  
+</section>
+
+<!-- FIXED SECTION NAV -->
+<div id="fixedNav" class="fixed-nav">
+  <button id="fixedPrev" class="fixed-nav-btn" onclick="navStep(-1)">◀ <span id="fixedPrevLabel">PREV</span></button>
+  <div id="fixedDots" class="fixed-nav-dots"></div>
+  <button id="fixedNext" class="fixed-nav-btn" onclick="navStep(1)"><span id="fixedNextLabel">NEXT</span> ▶</button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2025 VLADYSLAV SOBAKAR</span>
+  <span>MADE WITH <span style="color:var(--pink)">♥</span> & PIXELS</span>
+</footer>
+
+<!-- PROJECT MODAL -->
+<div class="skill-modal-overlay" id="projectOverlay" onclick="closeProjectModal(event)">
+  <div class="skill-modal" id="projectModal" style="max-width:640px;">
+    <div class="skill-modal-header" id="projectModalHeader">
+      <div class="skill-modal-title" id="projectModalTitle">PROJECT</div>
+      <button class="skill-modal-close" onclick="closeProjectModal()">✕ CLOSE</button>
+    </div>
+    <div class="skill-modal-body">
+
+      <!-- Gallery -->
+      <div id="projectModalGallery" class="proj-gallery" style="display:none;margin-bottom:20px;">
+        <div class="proj-gallery-main">
+          <button class="proj-gallery-arrow left" onclick="galleryStep(-1)">◀</button>
+          <div class="proj-gallery-img-wrap">
+            <img id="projGalleryImg" src="" alt="" style="width:100%;height:100%;object-fit:contain;">
+            <div id="projGalleryEmoji" class="proj-gallery-emoji"></div>
+          </div>
+          <button class="proj-gallery-arrow right" onclick="galleryStep(1)">▶</button>
+        </div>
+        <div id="projGalleryDots" class="proj-gallery-dots"></div>
+      </div>
+
+      <!-- Description -->
+      <p class="skill-modal-desc" id="projectModalDesc"></p>
+
+      <!-- Difficulty bars -->
+      <div class="skill-modal-subtitle">COMPLEXITY</div>
+      <div id="projectModalBars" style="display:flex;flex-direction:column;gap:10px;margin-bottom:20px;"></div>
+
+      <!-- Tools -->
+      <div class="skill-modal-subtitle">TOOLS USED</div>
+      <div class="skill-modal-tags" id="projectModalTags" style="margin-bottom:20px;"></div>
+
+      <!-- GitHub link -->
+      <div class="skill-modal-projects" style="border-top:2px solid #222;padding-top:16px;">
+        <div class="skill-modal-subtitle">GITHUB / LINK</div>
+        <div id="projectModalLink" style="font-family:'VT323',monospace;font-size:20px;color:#555;margin-top:6px;">
+          — coming soon —
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- WORK EXPERIENCE MODAL -->
+<div class="skill-modal-overlay" id="workOverlay" onclick="closeWorkModal(event)">
+  <div class="skill-modal" id="workModal" style="max-width:640px;max-height:85vh;overflow-y:auto;">
+    <div class="skill-modal-header" id="workModalHeader">
+      <div class="skill-modal-title" id="workModalTitle">WORK</div>
+      <button class="skill-modal-close" onclick="closeWorkModal()">✕ CLOSE</button>
+    </div>
+    <div class="skill-modal-body">
+
+      <!-- Company info -->
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px;margin-bottom:16px;">
+        <div>
+          <div style="font-size:8px;color:var(--yellow);margin-bottom:4px;" id="workModalPeriod"></div>
+          <div style="font-family:'VT323',monospace;font-size:18px;color:#aaa;" id="workModalCompany"></div>
+          <div style="font-family:'VT323',monospace;font-size:16px;color:#555;margin-top:3px;" id="workModalLocation"></div>
+        </div>
+        <div id="workModalType" style="font-size:8px;padding:5px 10px;border:2px solid var(--pink);color:var(--pink);"></div>
+      </div>
+
+      <!-- About company -->
+      <div class="skill-modal-subtitle" id="workModalAboutLabel">ABOUT THE COMPANY</div>
+      <p class="skill-modal-desc" id="workModalAbout"></p>
+
+      <!-- Responsibilities -->
+      <div class="skill-modal-subtitle" id="workModalRespLabel">RESPONSIBILITIES</div>
+      <div id="workModalResp" style="font-family:'VT323',monospace;font-size:18px;color:#ccc;line-height:1.8;margin-bottom:20px;border-left:4px solid var(--pink);padding-left:14px;"></div>
+
+      <!-- Skills used -->
+      <div class="skill-modal-subtitle" id="workModalSkillsLabel">SKILLS APPLIED</div>
+      <div class="skill-modal-tags" id="workModalSkills" style="margin-bottom:20px;"></div>
+
+      <!-- Impact -->
+      <div class="skill-modal-projects" style="border-top:2px solid #222;padding-top:16px;">
+        <div class="skill-modal-subtitle" id="workModalImpactLabel">IMPACT</div>
+        <div id="workModalImpact" style="font-family:'VT323',monospace;font-size:18px;color:#ccc;line-height:1.6;margin-top:6px;"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- EDUCATION MODAL -->
+<div class="skill-modal-overlay" id="eduOverlay" onclick="closeEduModal(event)">
+  <div class="skill-modal" id="eduModal" style="max-width:620px;max-height:85vh;overflow-y:auto;">
+    <div class="skill-modal-header" id="eduModalHeader">
+      <div class="skill-modal-title" id="eduModalTitle">EDUCATION</div>
+      <button class="skill-modal-close" onclick="closeEduModal()">✕ CLOSE</button>
+    </div>
+    <div class="skill-modal-body">
+
+      <!-- Uni info -->
+      <div id="eduModalMeta" style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:16px;">
+        <div>
+          <div style="font-size:8px;color:var(--yellow);margin-bottom:4px;" id="eduModalPeriod"></div>
+          <div style="font-family:'VT323',monospace;font-size:18px;color:#aaa;" id="eduModalLocation"></div>
+        </div>
+        <div id="eduModalStatus" style="font-size:8px;padding:5px 10px;border:2px solid var(--yellow);color:var(--yellow);"></div>
+      </div>
+
+      <!-- Description -->
+      <p class="skill-modal-desc" id="eduModalDesc"></p>
+
+      <!-- Focus areas -->
+      <div class="skill-modal-subtitle" id="eduModalFocusLabel">FOCUS AREAS</div>
+      <div class="skill-modal-tags" id="eduModalFocus" style="margin-bottom:20px;"></div>
+
+      <!-- Skills gained -->
+      <div class="skill-modal-subtitle" id="eduModalSkillsLabel">SKILLS GAINED</div>
+      <div id="eduModalSkills" style="display:flex;flex-direction:column;gap:10px;margin-bottom:20px;"></div>
+
+      <!-- Achievement -->
+      <div class="skill-modal-projects" style="border-top:2px solid #222;padding-top:16px;">
+        <div class="skill-modal-subtitle" id="eduModalAchLabel">HIGHLIGHT</div>
+        <div id="eduModalAch" style="font-family:'VT323',monospace;font-size:18px;color:#ccc;line-height:1.6;margin-top:6px;"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- SKILL MODAL -->
+<div class="skill-modal-overlay" id="skillOverlay" onclick="closeSkillModal(event)">
+  <div class="skill-modal" id="skillModal">
+    <div class="skill-modal-header">
+      <div class="skill-modal-title" id="modalTitle">SKILL</div>
+      <button class="skill-modal-close" onclick="closeSkillModal()">✕ CLOSE</button>
+    </div>
+    <div class="skill-modal-body">
+      <p class="skill-modal-desc" id="modalDesc"></p>
+      <div class="skill-modal-subtitle" id="modalTagsLabel">TOPICS & TOOLS</div>
+      <div class="skill-modal-tags" id="modalTags"></div>
+      <div class="skill-modal-projects" id="modalProjectsWrap">
+        <div class="skill-modal-subtitle">USED IN PROJECTS</div>
+        <div id="modalProjects"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
