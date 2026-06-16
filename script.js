@@ -1,17 +1,17 @@
 // ── PROJECT DATA ──
 const projectData = {
-  bigquery: {
-    title:    '🗄️ END-TO-END DATA ANALYSIS',
-    title_uk: '🗄️ НАСКРІЗНИЙ АНАЛІЗ ДАНИХ',
-    color: '#1a1a2e',
-    desc:    'Designed and populated relational tables with structured user datasets in Google BigQuery. Wrote complex SQL queries using JOINs, GROUP BY and aggregation functions to extract meaningful insights.',
-    desc_uk: 'Розробив і заповнив реляційні таблиці зі структурованими наборами даних у Google BigQuery. Писав складні SQL-запити з JOIN, GROUP BY та агрегатними функціями для отримання корисних інсайтів.',
-    bars:    [
-      { label: 'SQL Complexity',   label_uk: 'Складність SQL',    value: 80 },
-      { label: 'Data Modelling',   label_uk: 'Моделювання даних', value: 75 },
-      { label: 'Query Difficulty', label_uk: 'Складність запитів',value: 70 },
+  lin: {
+    title:    '🤖 LIN · VOICE ASSISTANT',
+    title_uk: '🤖 LIN · ГОЛОСОВИЙ АСИСТЕНТ',
+    color: '#241546',
+    desc:    'Lin is a Ukrainian-speaking desktop voice assistant for Windows, built from scratch in Python (~4,600 lines, 140+ commands). It listens with offline Ukrainian speech recognition (Vosk), talks back with neural text-to-speech (edge-tts) and thinks with an LLM brain (Groq / Llama, plus a vision model). Lin lives in the system tray and controls the PC by voice — launching apps, volume, screenshots, clipboard, notes, timers, reminders and a daily morning briefing — while integrating Spotify, Gmail, Google / YouTube and weather, with live system-health monitoring. Runs hidden in the background and auto-restarts via a watchdog.',
+    desc_uk: 'Lin — україномовний голосовий асистент для Windows, написаний з нуля на Python (~4600 рядків, 140+ команд). Слухає через офлайн-розпізнавання української мови (Vosk), відповідає нейронним голосом (edge-tts) і думає за допомогою LLM (Groq / Llama + vision-модель). Живе в системному треї й керує ПК голосом — запуск програм, гучність, скріншоти, буфер, нотатки, таймери, нагадування та ранковий брифінг — інтегрує Spotify, Gmail, Google / YouTube і погоду, плюс моніторинг стану системи. Працює приховано у фоні й авто-рестартує через watchdog.',
+    bars: [
+      { label: 'Voice (STT + TTS)',  label_uk: 'Голос (STT + TTS)',  value: 85 },
+      { label: 'LLM Integration',    label_uk: 'Інтеграція LLM',      value: 80 },
+      { label: 'Desktop Automation', label_uk: 'Автоматизація ПК',    value: 82 },
     ],
-    tools: ['SQL', 'Google BigQuery', 'Data Cleaning', 'Aggregations', 'Schema Design'],
+    tools: ['Python', 'Vosk (UA STT)', 'edge-tts', 'Groq LLM', 'pyautogui', 'pystray', 'tkinter'],
     link: ''
   },
   netflix: {
@@ -57,17 +57,17 @@ const projectData = {
     link: ''
   },
   nastalgia: {
-    title:    '🕹️ NOT NASTALGIA',
-    title_uk: '🕹️ NOT NASTALGIA',
+    title:    '🕹️ NOT NOSTALGIA',
+    title_uk: '🕹️ NOT NOSTALGIA',
     color: '#0d1117',
-    desc:    'A Unity game exploring themes of memory and nostalgia. Designed core gameplay loop, scene transitions, and narrative delivery. Built with custom C# scripts handling player state and level flow.',
-    desc_uk: 'Гра на Unity про теми пам\'яті та ностальгії. Розробив основний ігровий цикл, переходи між сценами та подачу наративу. Написаний на C# зі скриптами для стану гравця та потоку рівнів.',
+    desc:    'A first-person 3D horror puzzle game made in Unity. You wake in a dark, fog-filled house and explore it room by room — solving environmental puzzles and collecting the items you need to escape, while a ghost roams the halls. Built on custom C# systems: an inventory, AI navigation (NavMesh) for the ghost, a hide mechanic, scripted room events & jump-scares, and a final escape sequence.',
+    desc_uk: 'Першоособова 3D horror-пазл гра на Unity. Ти прокидаєшся в темному будинку, повному туману, і досліджуєш його кімната за кімнатою — розгадуючи загадки в оточенні та збираючи предмети для втечі, поки коридорами блукає привид. Побудована на власних C#-системах: інвентар, AI-навігація (NavMesh) для привида, механіка схованки, скриптовані події в кімнатах і скрими, фінальна сцена втечі.',
     bars: [
-      { label: 'Game Design',      label_uk: 'Гейм-дизайн',     value: 75 },
-      { label: 'C# Scripting',     label_uk: 'Скриптинг C#',     value: 70 },
-      { label: 'Level Design',     label_uk: 'Дизайн рівнів',    value: 72 },
+      { label: 'Horror Atmosphere', label_uk: 'Horror-атмосфера', value: 82 },
+      { label: 'Puzzle & Gameplay', label_uk: 'Пазли та геймплей', value: 72 },
+      { label: 'C# Systems',         label_uk: 'C#-системи',        value: 75 },
     ],
-    tools: ['Unity', 'C#', 'Scene Management', 'Game Mechanics', 'Narrative Design'],
+    tools: ['Unity 6', 'C#', 'AI NavMesh', 'Inventory System', '3D Environment', 'Lighting & Sound'],
     link: ''
   },
   suwuside: {
@@ -92,23 +92,23 @@ const skillData = {
     icon: '🐍',
     title:    'PYTHON',
     title_uk: 'PYTHON',
-    desc:    'Learned through hands-on teaching at GOITeens and personal data projects. Used Python for data cleaning, logic building, and automation — from writing functions to processing structured datasets.',
-    desc_uk: 'Вивчив через практичне викладання у GOITeens та особисті дата-проєкти. Використовував Python для очищення даних, побудови логіки та автоматизації — від написання функцій до обробки структурованих наборів.',
-    tags:    ['Data Cleaning', 'Functions', 'Loops & Logic', 'Debugging', 'OOP Basics', 'Libraries'],
-    tags_uk: ['Очищення даних', 'Функції', 'Цикли та логіка', 'Дебагінг', 'Основи ООП', 'Бібліотеки'],
-    projects:    ['End-to-End User Data Analysis', 'Python Instructor @ GOITeens'],
-    projects_uk: ['Наскрізний аналіз даних', 'Викладач Python @ GOITeens']
+    desc:    'My core language — used daily as a Python Engineer at WinWin.travel to build FastAPI microservices and LLM tool-orchestration, and in my own projects like the Lin voice assistant (~4,600 lines). Also taught it hands-on at GOITeens.',
+    desc_uk: 'Моя основна мова — щодня використовую як Python Engineer у WinWin.travel для FastAPI-мікросервісів та LLM-оркестрації, а також у власних проєктах, як голосовий асистент Lin (~4600 рядків). Також викладав його практично у GOITeens.',
+    tags:    ['FastAPI', 'Async / Await', 'OOP', 'Automation', 'LLM Integration', 'Debugging'],
+    tags_uk: ['FastAPI', 'Async / Await', 'ООП', 'Автоматизація', 'Інтеграція LLM', 'Дебагінг'],
+    projects:    ['WinWin.travel AI Agent Service', 'Lin Voice Assistant', 'Python Instructor @ GOITeens'],
+    projects_uk: ['AI-агент сервіс WinWin.travel', 'Голосовий асистент Lin', 'Викладач Python @ GOITeens']
   },
   sql: {
     icon: '🗄️',
-    title:    'SQL / BIGQUERY',
-    title_uk: 'SQL / BIGQUERY',
-    desc:    'Developed through the End-to-End Data Analysis project on Google BigQuery. Wrote complex queries, designed relational table schemas, and extracted meaningful insights from structured datasets.',
-    desc_uk: 'Розвинув через проєкт наскрізного аналізу даних у Google BigQuery. Писав складні запити, проєктував схеми реляційних таблиць та витягував корисні інсайти з датасетів.',
+    title:    'SQL',
+    title_uk: 'SQL',
+    desc:    'Foundational database skill from an end-to-end data-analysis project on Google BigQuery — writing complex queries, designing relational schemas and joining large datasets to extract insights, before moving into backend engineering.',
+    desc_uk: 'Базовий навик роботи з БД, здобутий у проєкті наскрізного аналізу даних у Google BigQuery — складні запити, проєктування реляційних схем та джойни великих датасетів для інсайтів, ще до переходу в backend-розробку.',
     tags:    ['SELECT & WHERE', 'JOIN', 'GROUP BY', 'Aggregations', 'BigQuery', 'Schema Design'],
     tags_uk: ['SELECT & WHERE', 'JOIN', 'GROUP BY', 'Агрегації', 'BigQuery', 'Проєктування схем'],
-    projects:    ['End-to-End User Data Analysis — Google BigQuery'],
-    projects_uk: ['Наскрізний аналіз даних — Google BigQuery']
+    projects:    ['BigQuery End-to-End Data Analysis (earlier project)'],
+    projects_uk: ['Наскрізний аналіз даних у BigQuery (попередній проєкт)']
   },
   tableau: {
     icon: '📊',
@@ -151,8 +151,8 @@ const skillData = {
     desc_uk: 'Вивчив під час навчання на Game Development у МРУ. Створював ігрові механіки, керував сценами та писав C# скрипти для поведінки гравця та ігрової логіки.',
     tags:    ['C# Scripting', 'Scene Management', 'Physics', 'Game Mechanics', 'UI in Unity', 'Prefabs'],
     tags_uk: ['Скриптинг C#', 'Менеджмент сцен', 'Фізика', 'Ігрові механіки', 'UI в Unity', 'Префаби'],
-    projects:    ['Not Nastalgia (Unity Game)'],
-    projects_uk: ['Not Nastalgia (Гра на Unity)']
+    projects:    ['Not Nostalgia (3D Horror Game)'],
+    projects_uk: ['Not Nostalgia (3D Horror-гра)']
   },
   '3d': {
     icon: '🧊',
@@ -164,6 +164,127 @@ const skillData = {
     tags_uk: ['High-Poly моделювання', 'Low-Poly моделювання', 'UV-розгортка', 'Стилізований шейдинг', 'Дизайн персонажів', 'Топологія'],
     projects:    ['High-Poly Samurai Character', 'Low-Poly Kimono Girl'],
     projects_uk: ['High-Poly Самурай', 'Low-Poly Кімоно Дівчина']
+  },
+  fastapi: {
+    icon: '⚡',
+    title:    'FASTAPI',
+    title_uk: 'FASTAPI',
+    desc:    'My main backend framework at WinWin.travel. I build asynchronous REST APIs, request/response models with Pydantic, background tasks and dependency injection for the AI travel-assistant service.',
+    desc_uk: 'Мій основний backend-фреймворк у WinWin.travel. Будую асинхронні REST API, моделі запит/відповідь на Pydantic, фонові задачі та dependency injection для сервісу AI-асистента подорожей.',
+    tags:    ['Async REST APIs', 'Pydantic', 'Background Tasks', 'Dependency Injection', 'OpenAPI Docs', 'Uvicorn'],
+    tags_uk: ['Async REST API', 'Pydantic', 'Фонові задачі', 'Dependency Injection', 'OpenAPI-доки', 'Uvicorn'],
+    projects:    ['WinWin.travel AI Agent Service'],
+    projects_uk: ['AI-агент сервіс WinWin.travel']
+  },
+  docker: {
+    icon: '🐳',
+    title:    'DOCKER',
+    title_uk: 'DOCKER',
+    desc:    'I containerize Python services with multi-stage builds, non-root users and health checks — packaging the AI agent service so it runs the same in every environment.',
+    desc_uk: 'Контейнеризую Python-сервіси: multi-stage збірки, non-root користувачі, healthcheck — пакую AI-агент сервіс так, щоб він однаково працював у будь-якому середовищі.',
+    tags:    ['Multi-stage Builds', 'Dockerfile', 'Healthchecks', 'Containers', 'Images', 'uv'],
+    tags_uk: ['Multi-stage збірки', 'Dockerfile', 'Healthcheck', 'Контейнери', 'Образи', 'uv'],
+    projects:    ['WinWin.travel AI Agent Service'],
+    projects_uk: ['AI-агент сервіс WinWin.travel']
+  },
+  git: {
+    icon: '🌿',
+    title:    'GIT / WORKFLOW',
+    title_uk: 'GIT / WORKFLOW',
+    desc:    'Daily Git workflow — branches, pull requests, code review and submodules (a shared action contract reused across the Python and Java services). Comfortable with Bitbucket and feature-branch development.',
+    desc_uk: 'Щоденний Git-воркфлоу — гілки, pull request, code review та сабмодулі (спільний контракт дій для Python і Java сервісів). Впевнено з Bitbucket та feature-branch розробкою.',
+    tags:    ['Branching', 'Pull Requests', 'Code Review', 'Submodules', 'Bitbucket', 'Merge / Rebase'],
+    tags_uk: ['Гілкування', 'Pull Requests', 'Code Review', 'Сабмодулі', 'Bitbucket', 'Merge / Rebase'],
+    projects:    ['All WinWin.travel repos', 'Jira migration tooling'],
+    projects_uk: ['Усі репозиторії WinWin.travel', 'Інструменти міграції Jira']
+  },
+  csharp: {
+    icon: '#️⃣',
+    title:    'C#',
+    title_uk: 'C#',
+    desc:    'My main language for game development in Unity. I use C# to build gameplay systems — player state, inventory, AI behaviour, scripted events and UI logic — for my 3D horror puzzle game.',
+    desc_uk: 'Моя основна мова для розробки ігор в Unity. На C# пишу ігрові системи — стан гравця, інвентар, поведінку AI, скриптовані події та логіку UI — для своєї 3D horror-пазл гри.',
+    tags:    ['OOP', 'Unity API', 'Game Logic', 'State Machines', 'Events', 'Coroutines'],
+    tags_uk: ['ООП', 'Unity API', 'Ігрова логіка', 'Стан-машини', 'Події', 'Корутини'],
+    projects:    ['Not Nostalgia (3D Horror Puzzle)'],
+    projects_uk: ['Not Nostalgia (3D Horror-пазл)']
+  },
+  blender: {
+    icon: '🍩',
+    title:    'BLENDER',
+    title_uk: 'BLENDER',
+    desc:    'My tool for 3D character art. Modelled, UV-unwrapped, textured and rendered both high-poly and low-poly stylized characters, with cloth simulation and stylized shading.',
+    desc_uk: 'Мій інструмент для 3D-арту персонажів. Моделював, робив UV-розгортку, текстурував і рендерив high-poly та low-poly стилізованих персонажів — із симуляцією тканини та стилізованим шейдингом.',
+    tags:    ['Modelling', 'Sculpting', 'UV Unwrapping', 'Texturing', 'Rigging', 'Rendering'],
+    tags_uk: ['Моделювання', 'Скульптинг', 'UV-розгортка', 'Текстурування', 'Ригінг', 'Рендеринг'],
+    projects:    ['High-Poly Samurai', 'Low-Poly Kimono Girl'],
+    projects_uk: ['High-Poly Самурай', 'Low-Poly Кімоно Дівчина']
+  },
+  gamemaker: {
+    icon: '🕹️',
+    title:    'GAME MAKER',
+    title_uk: 'GAME MAKER',
+    desc:    'Built sUwUside Hotline, a narrative-driven 2D game in GameMaker Studio with GML — custom pixel art, branching dialogue and an original soundtrack, focused on emotional storytelling.',
+    desc_uk: 'Зробив sUwUside Hotline, наративну 2D-гру в GameMaker Studio на GML — власний піксель-арт, розгалужені діалоги та оригінальний саундтрек, з акцентом на емоційному сторітелінгу.',
+    tags:    ['GML', 'Sprites', 'Dialogue System', 'Game Loop', '2D Physics', 'Tilemaps'],
+    tags_uk: ['GML', 'Спрайти', 'Система діалогів', 'Ігровий цикл', '2D-фізика', 'Tilemap'],
+    projects:    ['sUwUside Hotline'],
+    projects_uk: ['sUwUside Hotline']
+  },
+  pixelart: {
+    icon: '👾',
+    title:    'PIXEL ART',
+    title_uk: 'ПІКСЕЛЬ-АРТ',
+    desc:    'Hand-crafted pixel art for games and UI — sprites, tiles and retro interfaces. The entire pixel aesthetic of this very portfolio is built by hand too.',
+    desc_uk: 'Ручний піксель-арт для ігор та UI — спрайти, тайли й ретро-інтерфейси. Уся піксельна естетика цього портфоліо — теж ручна робота.',
+    tags:    ['Sprites', 'Tilesets', 'Animation', 'Retro UI', 'Colour Palettes', 'Dithering'],
+    tags_uk: ['Спрайти', 'Тайлсети', 'Анімація', 'Ретро UI', 'Колірні палітри', 'Дизеринг'],
+    projects:    ['sUwUside Hotline', 'This Portfolio'],
+    projects_uk: ['sUwUside Hotline', 'Це портфоліо']
+  },
+  orchestration: {
+    icon: '🧩',
+    title:    'AI ORCHESTRATION',
+    title_uk: 'AI-ОРКЕСТРАЦІЯ',
+    desc:    'Designing the "brain loop" of an assistant — turning a request into the right action. In Lin I route recognized speech to an LLM (Groq), read the intent, dispatch the matching command/tool and feed the result back into the conversation. The same tool-selection pattern powers the WinWin.travel agent.',
+    desc_uk: 'Проєктування «мозкового циклу» асистента — перетворення запиту на потрібну дію. У Lin спрямовую розпізнану мову до LLM (Groq), читаю намір, викликаю відповідну команду/інструмент і повертаю результат у діалог. Той самий патерн вибору інструментів рухає й агента WinWin.travel.',
+    tags:    ['LLM Routing', 'Intent Handling', 'Tool / Command Dispatch', 'Groq', 'Context Memory', 'Fallback Models'],
+    tags_uk: ['LLM-маршрутизація', 'Обробка намірів', 'Виклик інструментів', 'Groq', 'Памʼять контексту', 'Fallback-моделі'],
+    projects:    ['Lin Voice Assistant', 'WinWin.travel AI Agent'],
+    projects_uk: ['Голосовий асистент Lin', 'AI Agent WinWin.travel']
+  },
+  voice: {
+    icon: '🎙️',
+    title:    'VOICE / SPEECH AI',
+    title_uk: 'ГОЛОС / SPEECH AI',
+    desc:    'The ears and voice of Lin: offline Ukrainian speech-to-text (Vosk) and neural text-to-speech (edge-tts), with wake-word detection and push-to-talk, wired into a real-time audio pipeline.',
+    desc_uk: 'Вуха й голос Lin: офлайн розпізнавання української мови (Vosk) і нейронний синтез голосу (edge-tts), з детекцією wake-word і push-to-talk у real-time аудіо-конвеєрі.',
+    tags:    ['Vosk STT', 'edge-tts', 'Wake Word', 'Push-to-Talk', 'Audio Pipeline', 'Ukrainian'],
+    tags_uk: ['Vosk STT', 'edge-tts', 'Wake Word', 'Push-to-Talk', 'Аудіо-конвеєр', 'Українська'],
+    projects:    ['Lin Voice Assistant'],
+    projects_uk: ['Голосовий асистент Lin']
+  },
+  automation: {
+    icon: '⚙️',
+    title:    'AUTOMATION',
+    title_uk: 'АВТОМАТИЗАЦІЯ',
+    desc:    'Scripting the desktop and OS: controlling apps, mouse/keyboard and the system with pyautogui & psutil, plus running as a background system-tray service with a watchdog that auto-restarts on crashes.',
+    desc_uk: 'Скриптинг робочого столу та ОС: керування програмами, мишею/клавіатурою й системою через pyautogui та psutil, плюс робота фоновим сервісом у треї з watchdog, що авто-рестартує після збоїв.',
+    tags:    ['pyautogui', 'OS Scripting', 'System Tray', 'Watchdog', 'Background Services', 'psutil'],
+    tags_uk: ['pyautogui', 'Скриптинг ОС', 'Системний трей', 'Watchdog', 'Фонові сервіси', 'psutil'],
+    projects:    ['Lin Voice Assistant'],
+    projects_uk: ['Голосовий асистент Lin']
+  },
+  apis: {
+    icon: '🔌',
+    title:    'APIs / INTEGRATIONS',
+    title_uk: 'API / ІНТЕГРАЦІЇ',
+    desc:    'Wiring third-party services into apps via REST APIs, OAuth and SDKs. In Lin I integrated Gmail, Spotify, Google / YouTube and weather; at work I build and consume REST APIs with FastAPI.',
+    desc_uk: 'Підключення сторонніх сервісів через REST API, OAuth та SDK. У Lin інтегрував Gmail, Spotify, Google / YouTube і погоду; на роботі будую й споживаю REST API на FastAPI.',
+    tags:    ['REST APIs', 'OAuth 2.0', 'Gmail API', 'Spotify API', 'Webhooks', 'JSON'],
+    tags_uk: ['REST API', 'OAuth 2.0', 'Gmail API', 'Spotify API', 'Webhooks', 'JSON'],
+    projects:    ['Lin Voice Assistant', 'WinWin.travel AI Agent'],
+    projects_uk: ['Голосовий асистент Lin', 'AI Agent WinWin.travel']
   },
   figma: {
     icon: '🎨',
@@ -286,9 +407,12 @@ document.querySelectorAll('.project-card[data-project]').forEach(card => {
 });
 
 // ── PROJECT FILTER ──
-function filterProjects(cat) {
+function filterProjects(cat, ev) {
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  event.target.classList.add('active');
+  const btn = (ev && ev.target) ||
+    (typeof event !== 'undefined' && event && event.target) ||
+    [...document.querySelectorAll('.filter-btn')].find(b => (b.getAttribute('onclick') || '').includes("'" + cat + "'"));
+  if (btn && btn.classList) btn.classList.add('active');
   document.querySelectorAll('.project-card').forEach(card => {
     if (cat === 'all' || card.dataset.cat === cat) {
       card.classList.remove('hidden');
@@ -298,17 +422,38 @@ function filterProjects(cat) {
   });
 }
 
-// ── LANGUAGE TOGGLE ──
+// ── LANGUAGE TOGGLE (persisted) ──
 let currentLang = 'en';
 
-function toggleLang() {
-  currentLang = currentLang === 'en' ? 'uk' : 'en';
+function applyLang(lang) {
+  currentLang = lang;
   const btn = document.getElementById('langBtn');
-  btn.textContent = currentLang === 'en' ? '🌐 УКР' : '🌐 ENG';
+  if (btn) btn.textContent = lang === 'en' ? '🌐 УКР' : '🌐 ENG';
+  document.documentElement.lang = lang;
   document.querySelectorAll('[data-en]').forEach(el => {
-    el.innerHTML = el.getAttribute('data-' + currentLang);
+    el.innerHTML = el.getAttribute('data-' + lang);
   });
+  try { localStorage.setItem('lang', lang); } catch (e) {}
 }
+
+function toggleLang() {
+  applyLang(currentLang === 'en' ? 'uk' : 'en');
+}
+
+// Restore saved language on load
+(function () {
+  let saved = null;
+  try { saved = localStorage.getItem('lang'); } catch (e) {}
+  if (saved === 'uk') applyLang('uk');
+})();
+
+// ── MOBILE MENU TOGGLE ──
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+document.querySelectorAll('#navLinks a').forEach(a => {
+  a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+});
 
 // ── INTERSECTION OBSERVER ──
 const sections = document.querySelectorAll('.page-section');
@@ -349,6 +494,21 @@ function initCanvas(id) {
   return { canvas, ctx };
 }
 
+// ── ANIMATION PERFORMANCE: pause off-screen + respect reduced-motion ──
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const visibleCanvases = new Set();
+if (!prefersReducedMotion) {
+  const canvasObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => e.isIntersecting
+      ? visibleCanvases.add(e.target.id)
+      : visibleCanvases.delete(e.target.id));
+  }, { threshold: 0 });
+  document.querySelectorAll('.bg-canvas').forEach(c => canvasObserver.observe(c));
+}
+function canvasActive(id) {
+  return !prefersReducedMotion && !document.hidden && visibleCanvases.has(id);
+}
+
 // ── ABOUT: Matrix rain (digits falling) ──
 (function() {
   const c = initCanvas('canvasAbout');
@@ -363,6 +523,7 @@ function initCanvas(id) {
   setup();
   window.addEventListener('resize', setup);
   function draw() {
+    if (!canvasActive('canvasAbout')) return;
     ctx.fillStyle = 'rgba(10,10,10,0.07)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = '#FF2D7822';
@@ -384,6 +545,7 @@ function initCanvas(id) {
   const { canvas, ctx } = c;
   let t = 0;
   function draw() {
+    if (!canvasActive('canvasSkills')) { requestAnimationFrame(draw); return; }
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     const spacing = 40;
     t += 0.015;
@@ -416,6 +578,7 @@ function initCanvas(id) {
     color: Math.random() > 0.5 ? '#FF2D78' : '#FFE600'
   }));
   function draw() {
+    if (!canvasActive('canvasProjects')) { requestAnimationFrame(draw); return; }
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     shapes.forEach(s => {
       s.x += s.vx; s.y += s.vy;
@@ -464,6 +627,7 @@ function initCanvas(id) {
     speed: Math.random() * 0.03 + 0.01
   }));
   function draw() {
+    if (!canvasActive('canvasEducation')) { requestAnimationFrame(draw); return; }
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     stars.forEach(s => {
       s.phase += s.speed;
@@ -492,6 +656,7 @@ function initCanvas(id) {
     color: Math.random() > 0.6 ? '#FF2D78' : '#0A0A0A'
   }));
   function draw() {
+    if (!canvasActive('canvasExperience')) { requestAnimationFrame(draw); return; }
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     particles.forEach(p => {
       p.y -= p.speed;
@@ -513,6 +678,7 @@ function initCanvas(id) {
   const { canvas, ctx } = c;
   const ripples = [];
   function addRipple() {
+    if (!canvasActive('canvasContact')) return;
     ripples.push({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
@@ -524,6 +690,7 @@ function initCanvas(id) {
   setInterval(addRipple, 900);
   addRipple(); addRipple(); addRipple();
   function draw() {
+    if (!canvasActive('canvasContact')) { requestAnimationFrame(draw); return; }
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     for (let i = ripples.length - 1; i >= 0; i--) {
       const rp = ripples[i];
@@ -598,41 +765,43 @@ updateFixedNav(0);
 // Add your real image paths here when you have them!
 // Format: { src: 'img/file.png' } or { emoji: '🗄️' } for placeholder
 const projectImages = {
-  bigquery:  [
-    { emoji: '🗄️' },
-    { emoji: '📊' },
-    { emoji: '🔍' },
-    { emoji: '📈' },
+  lin:       [
+    { src: 'img/lin_overview.png' },
+    { src: 'img/lin_features.png' },
+    { src: 'img/lin_stack.png' },
   ],
   netflix:   [
-    { emoji: '🎬' },
-    { emoji: '📊' },
-    { emoji: '🌍' },
-    { emoji: '📺' },
+    { src: 'img/netflix_dashboard.jpg' },
+    { src: 'img/netflix_dynamic.jpg' },
+    { src: 'img/netflix_pct_total.jpg' },
+    { src: 'img/netflix_country_bars.jpg' },
   ],
   samurai:   [
-    { src: 'img/SamuraiPose_MasterShot.png' },
-    { emoji: '⚔️' },
-    { emoji: '🎭' },
-    { emoji: '🧊' },
+    { src: 'img/Samurai_Stylized.jpg' },
+    { src: 'img/Samurai_AnimeLike.jpg' },
+    { src: 'img/samurai_blender_01.jpg' },
+    { src: 'img/samurai_blender_02.jpg' },
   ],
   kimono:    [
-    { src: 'img/Samurai_AnimeLike.png' },
-    { emoji: '🌸' },
-    { emoji: '🎎' },
-    { emoji: '🧵' },
+    { src: 'img/kimono_master_shot.jpg' },
+    { src: 'img/KimonoGIrl_PrevieRender.jpg' },
+    { src: 'img/kimono_pose.jpg' },
+    { src: 'img/kimono_blender_clay.jpg' },
   ],
   nastalgia: [
-    { emoji: '🕹️' },
-    { emoji: '💾' },
-    { emoji: '🎮' },
-    { emoji: '👾' },
+    { src: 'img/notnostalgia_menu.jpg' },
+    { src: 'img/notnostalgia_ghost.jpg' },
+    { src: 'img/notnostalgia_scare.jpg' },
+    { src: 'img/notnostalgia_living.jpg' },
+    { src: 'img/notnostalgia_study.jpg' },
+    { src: 'img/notnostalgia_kitchen.jpg' },
   ],
   suwuside:  [
-    { emoji: '🌸' },
-    { emoji: '📞' },
-    { emoji: '🎨' },
-    { emoji: '🎵' },
+    { src: 'img/suwuside_menu.jpg' },
+    { src: 'img/suwuside_hub.jpg' },
+    { src: 'img/suwuside_dialogue1.jpg' },
+    { src: 'img/suwuside_dialogue2.jpg' },
+    { src: 'img/suwuside_dialogue3.jpg' },
   ],
 };
 
@@ -654,7 +823,7 @@ document.querySelectorAll('.card-slider').forEach(slider => {
     slide.className = 'card-slide' + (i === 0 ? ' active' : '');
     if (img.src) {
       const im = document.createElement('img');
-      im.src = img.src; im.alt = key;
+      im.src = img.src; im.alt = key + ' project preview'; im.loading = 'lazy';
       slide.appendChild(im);
     } else {
       slide.textContent = img.emoji || '📁';
@@ -722,6 +891,43 @@ function galleryStep(dir) {
   const imgs = projectImages[galleryImages._key] || [];
   galleryGoTo(galleryIndex + dir);
 }
+
+// ── FULLSCREEN IMAGE LIGHTBOX ──
+let lightboxImgs = [];
+let lightboxIndex = 0;
+function openLightbox() {
+  const imgs = (projectImages[galleryImages._key] || []).filter(o => o.src);
+  if (!imgs.length) return;
+  lightboxImgs = imgs;
+  const curSrc = document.getElementById('projGalleryImg').getAttribute('src');
+  const i = lightboxImgs.findIndex(o => o.src === curSrc);
+  lightboxIndex = i >= 0 ? i : 0;
+  renderLightbox();
+  document.getElementById('lightboxOverlay').classList.add('open');
+}
+function renderLightbox() {
+  const cur = lightboxImgs[lightboxIndex];
+  if (!cur) return;
+  document.getElementById('lightboxImg').src = cur.src;
+  document.getElementById('lightboxCounter').textContent = (lightboxIndex + 1) + ' / ' + lightboxImgs.length;
+}
+function lightboxStep(dir) {
+  if (!lightboxImgs.length) return;
+  lightboxIndex = (lightboxIndex + dir + lightboxImgs.length) % lightboxImgs.length;
+  renderLightbox();
+}
+function closeLightbox(e) {
+  if (e && e.target.id !== 'lightboxOverlay' && !e.target.classList.contains('lightbox-close')) return;
+  document.getElementById('lightboxOverlay').classList.remove('open');
+}
+// ESC closes the lightbox first (before project modal); arrows navigate. Capture phase so it runs before the modal's ESC handlers.
+document.addEventListener('keydown', e => {
+  const lb = document.getElementById('lightboxOverlay');
+  if (!lb || !lb.classList.contains('open')) return;
+  if (e.key === 'Escape') { e.stopImmediatePropagation(); lb.classList.remove('open'); }
+  else if (e.key === 'ArrowLeft') { e.preventDefault(); lightboxStep(-1); }
+  else if (e.key === 'ArrowRight') { e.preventDefault(); lightboxStep(1); }
+}, true);
 
 // Patch openProjectModal to init gallery
 const _origOpenProjectModal = openProjectModal;
@@ -859,6 +1065,27 @@ document.addEventListener('keydown', e => {
 
 // ── WORK EXPERIENCE DATA ──
 const workData = {
+  winwin: {
+    title:    '🐍 PYTHON ENGINEER',
+    title_uk: '🐍 PYTHON ENGINEER',
+    color:    '#FF2D78',
+    period:   'MAY 2026 — PRESENT',
+    period_uk:'ТРАВ 2026 — ЗАРАЗ',
+    company:  'WinWin.travel — Online Travel Platform',
+    company_uk: 'WinWin.travel — Онлайн travel-платформа',
+    location: 'Vilnius, Lithuania',
+    location_uk: 'Вільнюс, Литва',
+    type:     'FULL-TIME',
+    type_uk:  'ПОВНА ЗАЙНЯТІСТЬ',
+    about:    'WinWin.travel is an online travel platform that helps users search, compare and book hotel offers. The engineering team is building an AI-powered travel assistant that understands natural-language requests and turns them into searches and actions across the product.',
+    about_uk: 'WinWin.travel — онлайн travel-платформа, що допомагає шукати, порівнювати та бронювати готельні пропозиції. Команда розробки створює AI-асистента подорожей, який розуміє запити природною мовою та перетворює їх на пошуки й дії в продукті.',
+    resp:    '· Develop and maintain Python FastAPI microservices behind the AI travel assistant\n· Implement LLM tool/action orchestration with OpenAI — selecting and running the right action per user message\n· Designed an async request flow (202 Accepted + background processing + backend callbacks)\n· Maintain a shared, language-agnostic action contract consumed by Python and Java/Spring services\n· Build internal tooling, including a Jira Cloud → self-hosted Jira Server migration pipeline\n· Write tests, containerize services with Docker, manage dependencies with uv',
+    resp_uk: '· Розробляю та підтримую Python FastAPI-мікросервіси за AI-асистентом подорожей\n· Реалізую LLM-оркестрацію інструментів/дій з OpenAI — вибір і запуск правильної дії на кожне повідомлення\n· Спроєктував асинхронний потік запитів (202 Accepted + фонова обробка + колбеки на бекенд)\n· Підтримую спільний мовно-незалежний контракт дій для Python та Java/Spring сервісів\n· Будую внутрішні інструменти, зокрема пайплайн міграції Jira Cloud → self-hosted Jira Server\n· Пишу тести, контейнеризую сервіси в Docker, керую залежностями через uv',
+    skills:   ['Python', 'FastAPI', 'OpenAI / LLM', 'REST APIs', 'Docker', 'Pydantic', 'pytest', 'Git'],
+    skills_uk:['Python', 'FastAPI', 'OpenAI / LLM', 'REST API', 'Docker', 'Pydantic', 'pytest', 'Git'],
+    impact:    '▶ Helping ship the platform\'s first AI assistant — turning free-text user messages into structured, actionable travel searches, and building the backend tooling the team relies on day to day.',
+    impact_uk: '▶ Допомагаю запустити перший AI-асистент платформи — перетворюючи вільний текст користувача на структуровані дії пошуку, та будую внутрішні інструменти, якими команда користується щодня.',
+  },
   goiteens: {
     title:    '🐍 PYTHON INSTRUCTOR',
     title_uk: '🐍 ВИКЛАДАЧ PYTHON',
@@ -930,4 +1157,23 @@ function closeWorkModal(e) {
 
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeWorkModal();
+});
+
+// ── KEYBOARD ACCESSIBILITY: make clickable cards focusable + Enter/Space ──
+document.querySelectorAll(
+  '.skill-card[data-skill], .project-card[data-project], [onclick^="openEduModal"], [onclick^="openWorkModal"]'
+).forEach(el => {
+  if (!el.hasAttribute('tabindex')) el.setAttribute('tabindex', '0');
+  if (!el.hasAttribute('role')) el.setAttribute('role', 'button');
+  el.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      el.click();
+    }
+  });
+});
+
+// ── DYNAMIC FOOTER YEAR ──
+document.querySelectorAll('.footer-year').forEach(el => {
+  el.textContent = new Date().getFullYear();
 });

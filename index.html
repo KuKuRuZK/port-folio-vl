@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PORTFOLIO</title>
+
+  <!-- Primary Meta -->
+  <title>Vladyslav Sobakar — Python Engineer | Portfolio</title>
+  <meta name="description" content="Vladyslav Sobakar — Python Engineer based in Vilnius. I build FastAPI backend services and AI-agent orchestration, work with SQL & BigQuery, and create 3D & game-dev projects. Retro pixel-art portfolio.">
+  <meta name="author" content="Vladyslav Sobakar">
+  <meta name="keywords" content="Vladyslav Sobakar, Python Engineer, FastAPI, Backend Developer, SQL, BigQuery, Data Analyst, Vilnius, Portfolio, 3D, Blender, Unity">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph (Facebook / LinkedIn / Telegram / Slack) -->
+  <!-- NOTE: after deploying, replace the relative og:url / og:image below with full absolute https URLs
+       (e.g. https://your-domain.com/img/og-image.png) so social link previews always render the image. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vladyslav Sobakar — Python Engineer">
+  <meta property="og:description" content="Python Engineer in Vilnius. FastAPI backends & AI-agent services, SQL/BigQuery, plus 3D & game-dev projects.">
+  <meta property="og:image" content="img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="./">
+  <meta property="og:site_name" content="Vladyslav Sobakar — Portfolio">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vladyslav Sobakar — Python Engineer">
+  <meta name="twitter:description" content="Python Engineer in Vilnius. FastAPI backends & AI-agent services, SQL/BigQuery, plus 3D & game-dev projects.">
+  <meta name="twitter:image" content="img/og-image.png">
+
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -20,7 +48,10 @@
     <li><a href="#experience" data-en="EXPERIENCE" data-uk="ДОСВІД">EXPERIENCE</a></li>
     <li><a href="#contact" data-en="CONTACT" data-uk="КОНТАКТ">CONTACT</a></li>
   </ul>
-  <button class="lang-toggle" id="langBtn" onclick="toggleLang()">🌐 УКР</button>
+  <div class="nav-right">
+    <button class="lang-toggle" id="langBtn" onclick="toggleLang()">🌐 УКР</button>
+    <button class="nav-burger" id="navBurger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -36,9 +67,12 @@
   <div class="floating-pixel" style="width:20px;height:20px;left:5%;top:55%;animation-duration:4s;animation-delay:0.8s;"></div>
 
   <h1 class="hero-title">VLADYSLAV<span>_</span><br>SOBAKAR</h1>
-  <p class="hero-subtitle" data-en="JUNIOR DATA ANALYST · PYTHON · SQL<br>VILNIUS, LITHUANIA" data-uk="JUNIOR DATA ANALYST · PYTHON · SQL<br>ВІЛЬНЮС, ЛИТВА">JUNIOR DATA ANALYST · PYTHON · SQL<br>VILNIUS, LITHUANIA</p>
+  <p class="hero-subtitle" data-en="PYTHON ENGINEER · PYTHON · SQL<br>VILNIUS, LITHUANIA" data-uk="PYTHON ENGINEER · PYTHON · SQL<br>ВІЛЬНЮС, ЛИТВА">PYTHON ENGINEER · PYTHON · SQL<br>VILNIUS, LITHUANIA</p>
   <div class="pixel-character">👾</div>
-  <a href="#about" class="press-start-btn">Press start</a>
+  <div class="hero-btns" style="position:relative;z-index:2;display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:center;margin-top:8px;">
+    <a href="#about" class="press-start-btn" style="margin-top:0;">Press start</a>
+    <a href="VladyslvaSobakar_Resume.pdf" download class="cv-btn" style="margin-top:0;margin-left:0;" data-en="▼ DOWNLOAD CV" data-uk="▼ ЗАВАНТАЖИТИ CV">▼ DOWNLOAD CV</a>
+  </div>
 
   <div class="scroll-indicator">
     <span class="scroll-arrow">▼ ▼ ▼</span>
@@ -58,11 +92,13 @@
     <h2 class="section-title" data-en="WHO<br>AM <span class='accent'>I?</span>" data-uk="ХТО<br>Я <span class='accent'>ТАКИЙ?</span>">WHO<br>AM <span class="accent">I?</span></h2>
     <div class="about-grid">
       <div class="about-text">
-        <p data-en="Hi! I'm <span class='highlight'>Vladyslav Sobakar</span>, a <span class='highlight-y'>Junior Data Analyst</span> from Vilnius." data-uk="Привіт! Я — <span class='highlight'>Vladyslav Sobakar</span>, <span class='highlight-y'>Junior Data Analyst</span> з Вільнюса.">Hi! I'm <span class="highlight">Vladyslav Sobakar</span>, a <span class="highlight-y">Junior Data Analyst</span> from Vilnius.</p>
+        <p data-en="Hi! I'm <span class='highlight'>Vladyslav Sobakar</span>, a <span class='highlight-y'>Python Engineer</span> based in Vilnius." data-uk="Привіт! Я — <span class='highlight'>Vladyslav Sobakar</span>, <span class='highlight-y'>Python Engineer</span> з Вільнюса.">Hi! I'm <span class="highlight">Vladyslav Sobakar</span>, a <span class="highlight-y">Python Engineer</span> based in Vilnius.</p>
         <br>
-        <p data-en="Third-year student with experience in <span class='highlight'>Python, SQL & BigQuery</span>. I build dashboards, write queries and analyze data." data-uk="Студент третього курсу з досвідом у <span class='highlight'>Python, SQL та BigQuery</span>. Будую дашборди, пишу запити та аналізую дані.">Third-year student with experience in <span class="highlight">Python, SQL & BigQuery</span>. I build dashboards, write queries and analyze data.</p>
+        <p data-en="Currently building <span class='highlight'>FastAPI backend services</span> and AI-agent orchestration at WinWin.travel, while finishing my Multimedia Design degree. Comfortable with Python, SQL & BigQuery." data-uk="Зараз будую <span class='highlight'>backend-сервіси на FastAPI</span> та оркестрацію AI-агента у WinWin.travel, паралельно завершуючи навчання з Multimedia Design. Впевнено працюю з Python, SQL та BigQuery.">Currently building <span class="highlight">FastAPI backend services</span> and AI-agent orchestration at WinWin.travel, while finishing my Multimedia Design degree. Comfortable with Python, SQL & BigQuery.</p>
         <br>
-        <p data-en="Also taught Python at <span class='highlight-y'>GOITeens</span> and work on freelance projects 🚀" data-uk="Також викладав Python у <span class='highlight-y'>GOITeens</span> і займаюсь фріланс-проєктами 🚀">Also taught Python at <span class="highlight-y">GOITeens</span> and work on freelance projects 🚀</p>
+        <p data-en="I also taught Python at <span class='highlight-y'>GOITeens</span> and sculpt stylized <span class='highlight'>3D characters</span> in Blender 🎨" data-uk="Також викладав Python у <span class='highlight-y'>GOITeens</span> і ліплю стилізованих <span class='highlight'>3D-персонажів</span> у Blender 🎨">I also taught Python at <span class="highlight-y">GOITeens</span> and sculpt stylized <span class="highlight">3D characters</span> in Blender 🎨</p>
+        <br>
+        <p data-en="But my favourite hobby is <span class='highlight-y'>making games</span> — 3D horror in Unity, pixel-art experiments and more — which I build and share on <span class='highlight'>GitHub</span> 🎮" data-uk="Але моє улюблене хоббі — <span class='highlight-y'>створювати ігри</span>: 3D-горор на Unity, піксельні експерименти й не тільки — які роблю та викладаю на <span class='highlight'>GitHub</span> 🎮">But my favourite hobby is <span class="highlight-y">making games</span> — 3D horror in Unity, pixel-art experiments and more — which I build and share on <span class="highlight">GitHub</span> 🎮</p>
       </div>
       <div>
         <div class="pixel-avatar">👾</div>
@@ -83,12 +119,47 @@
       <div class="skill-card" data-skill="python" style="cursor:pointer;">
         <span class="skill-icon">🐍</span>
         <div class="skill-name">PYTHON</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:88%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="fastapi" style="cursor:pointer;">
+        <span class="skill-icon">⚡</span>
+        <div class="skill-name">FASTAPI</div>
         <div class="skill-bar-bg"><div class="skill-bar" style="width:85%"></div></div>
       </div>
       <div class="skill-card" data-skill="sql" style="cursor:pointer;">
         <span class="skill-icon">🗄️</span>
         <div class="skill-name">SQL / BIGQUERY</div>
         <div class="skill-bar-bg"><div class="skill-bar" style="width:80%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="docker" style="cursor:pointer;">
+        <span class="skill-icon">🐳</span>
+        <div class="skill-name">DOCKER</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:72%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="git" style="cursor:pointer;">
+        <span class="skill-icon">🌿</span>
+        <div class="skill-name">GIT / WORKFLOW</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:82%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="orchestration" style="cursor:pointer;">
+        <span class="skill-icon">🧩</span>
+        <div class="skill-name">AI ORCHESTRATION</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:80%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="voice" style="cursor:pointer;">
+        <span class="skill-icon">🎙️</span>
+        <div class="skill-name">VOICE / SPEECH AI</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:80%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="automation" style="cursor:pointer;">
+        <span class="skill-icon">⚙️</span>
+        <div class="skill-name">AUTOMATION</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:82%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="apis" style="cursor:pointer;">
+        <span class="skill-icon">🔌</span>
+        <div class="skill-name">APIs / INTEGRATIONS</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:82%"></div></div>
       </div>
       <div class="skill-card" data-skill="tableau" style="cursor:pointer;">
         <span class="skill-icon">📊</span>
@@ -110,15 +181,35 @@
         <div class="skill-name">UNITY</div>
         <div class="skill-bar-bg"><div class="skill-bar" style="width:72%"></div></div>
       </div>
+      <div class="skill-card" data-skill="csharp" style="cursor:pointer;">
+        <span class="skill-icon">#️⃣</span>
+        <div class="skill-name">C#</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:75%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="gamemaker" style="cursor:pointer;">
+        <span class="skill-icon">🕹️</span>
+        <div class="skill-name">GAME MAKER</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:65%"></div></div>
+      </div>
       <div class="skill-card" data-skill="3d" style="cursor:pointer;">
         <span class="skill-icon">🧊</span>
         <div class="skill-name">3D MODELLING</div>
         <div class="skill-bar-bg"><div class="skill-bar" style="width:75%"></div></div>
       </div>
+      <div class="skill-card" data-skill="blender" style="cursor:pointer;">
+        <span class="skill-icon">🍩</span>
+        <div class="skill-name">BLENDER</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:80%"></div></div>
+      </div>
       <div class="skill-card" data-skill="figma" style="cursor:pointer;">
         <span class="skill-icon">🎨</span>
         <div class="skill-name">FIGMA / UI DESIGN</div>
         <div class="skill-bar-bg"><div class="skill-bar" style="width:80%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="pixelart" style="cursor:pointer;">
+        <span class="skill-icon">👾</span>
+        <div class="skill-name">PIXEL ART</div>
+        <div class="skill-bar-bg"><div class="skill-bar" style="width:72%"></div></div>
       </div>
     </div>
   </div>
@@ -133,24 +224,25 @@
     <h2 class="section-title" data-en="MY<br><span class='accent-y'>PROJECTS</span>" data-uk="МОЇ<br><span class='accent-y'>ПРОЄКТИ</span>">MY<br><span class="accent-y">PROJECTS</span></h2>
     <div class="filter-bar">
       <button class="filter-btn active" onclick="filterProjects('all')" data-en="ALL" data-uk="УСІ">ALL</button>
+      <button class="filter-btn" onclick="filterProjects('ai')" data-en="AI" data-uk="AI">AI</button>
       <button class="filter-btn" onclick="filterProjects('data')" data-en="DATA" data-uk="ДАНІ">DATA</button>
       <button class="filter-btn" onclick="filterProjects('3d')" data-en="3D" data-uk="3D">3D</button>
       <button class="filter-btn" onclick="filterProjects('games')" data-en="GAMES" data-uk="ІГРИ">GAMES</button>
     </div>
     <div class="projects-grid" id="projectsGrid">
 
-      <div class="project-card" data-cat="data" data-project="bigquery">
-        <div class="project-thumb card-slider" data-key="bigquery" style="background:#1a1a2e;overflow:hidden;padding:0;cursor:pointer;">
+      <div class="project-card" data-cat="ai" data-project="lin">
+        <div class="project-thumb card-slider" data-key="lin" style="background:#1a1030;overflow:hidden;padding:0;cursor:pointer;">
           <div class="card-slides"></div>
           <div class="card-dots"></div>
         </div>
         <div class="project-info">
           <div class="project-name">PROJECT 01</div>
-          <div class="project-desc">End-to-End User Data Analysis — Google BigQuery. Relational tables, JOIN, GROUP BY, aggregations.</div>
+          <div class="project-desc" data-en="Lin — a Ukrainian-speaking desktop voice assistant built from scratch in Python. Listens (offline Vosk), thinks (Groq LLM) and speaks (edge-tts) to run your PC by voice." data-uk="Lin — україномовний голосовий асистент для робочого столу, написаний з нуля на Python. Слухає (офлайн Vosk), думає (Groq LLM) і говорить (edge-tts), щоб керувати ПК голосом.">Lin — a Ukrainian-speaking desktop voice assistant built from scratch in Python. Listens (offline Vosk), thinks (Groq LLM) and speaks (edge-tts) to run your PC by voice.</div>
           <div class="project-tags">
-            <span class="tag">SQL</span>
-            <span class="tag y">BIGQUERY</span>
-            <span class="tag">DATA ANALYSIS</span>
+            <span class="tag">PYTHON</span>
+            <span class="tag y">VOICE AI</span>
+            <span class="tag">DESKTOP</span>
           </div>
         </div>
       </div>
@@ -210,10 +302,11 @@
         </div>
         <div class="project-info">
           <div class="project-name">PROJECT 05</div>
-          <div class="project-desc" data-en="Not Nastalgia — Unity game exploring themes of memory and nostalgia through gameplay." data-uk="Not Nastalgia — гра на Unity про теми пам'яті та ностальгії через геймплей.">Not Nastalgia — Unity game exploring themes of memory and nostalgia through gameplay.</div>
+          <div class="project-desc" data-en="Not Nostalgia — a first-person 3D horror puzzle game in Unity: explore a dark house, solve puzzles and escape while a ghost hunts you." data-uk="Not Nostalgia — першоособова 3D horror-пазл гра на Unity: досліджуй темний будинок, розгадуй загадки й тікай, поки тебе переслідує привид.">Not Nostalgia — a first-person 3D horror puzzle game in Unity: explore a dark house, solve puzzles and escape while a ghost hunts you.</div>
           <div class="project-tags">
             <span class="tag y">UNITY</span>
-            <span class="tag">GAME DEV</span>
+            <span class="tag">3D HORROR</span>
+            <span class="tag y">PUZZLE</span>
             <span class="tag">C#</span>
           </div>
         </div>
@@ -278,7 +371,32 @@
 
     <div style="display:flex;flex-direction:column;gap:0;">
 
-      <!-- Timeline item -->
+      <!-- Timeline item: WinWin.travel (current) -->
+      <div style="display:grid;grid-template-columns:140px 1fr;gap:0;position:relative;">
+        <!-- Left: date + line -->
+        <div style="display:flex;flex-direction:column;align-items:center;padding-top:4px;">
+          <div style="font-size:8px;color:var(--black);text-align:center;line-height:1.6;">MAY 2026<br>—<br>NOW</div>
+          <div style="width:4px;background:var(--black);flex:1;margin-top:12px;"></div>
+        </div>
+        <!-- Right: card -->
+        <div style="border:4px solid var(--black);background:var(--black);padding:24px;margin-bottom:24px;transition:transform 0.1s,box-shadow 0.1s;cursor:pointer;" onclick="openWorkModal('winwin')"
+          onmouseover="this.style.transform='translate(-4px,-4px)';this.style.boxShadow='8px 8px 0 var(--pink)'"
+          onmouseout="this.style.transform='';this.style.boxShadow=''">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:12px;">
+            <div style="font-size:12px;color:var(--yellow);">PYTHON ENGINEER</div>
+            <div style="font-size:9px;color:var(--pink);background:rgba(255,45,120,0.15);padding:4px 10px;border:1px solid var(--pink);">WinWin.travel</div>
+          </div>
+          <div style="font-family:'VT323',monospace;font-size:18px;color:#ccc;line-height:1.6;" data-en="· Building FastAPI microservices that power the WinWin.travel AI travel assistant<br>· Implemented LLM-based tool/action orchestration (OpenAI) with async callbacks<br>· Designed a shared, language-agnostic action contract used by Python and Java services<br>· Built internal Python tooling, incl. a Jira Cloud → Server migration pipeline → click for more" data-uk="· Будую FastAPI-мікросервіси, що рухають AI-асистента WinWin.travel<br>· Реалізував LLM-оркестрацію інструментів/дій (OpenAI) з асинхронними колбеками<br>· Спроєктував спільний мовно-незалежний контракт дій для Python та Java сервісів<br>· Створив внутрішні Python-інструменти, зокрема пайплайн міграції Jira Cloud → Server → клік для деталей">· Building FastAPI microservices that power the WinWin.travel AI travel assistant<br>· Implemented LLM-based tool/action orchestration (OpenAI) with async callbacks<br>· Designed a shared, language-agnostic action contract used by Python and Java services<br>· Built internal Python tooling, incl. a Jira Cloud → Server migration pipeline → click for more</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;">
+            <span style="font-size:8px;padding:4px 8px;background:var(--pink);color:var(--black);">PYTHON</span>
+            <span style="font-size:8px;padding:4px 8px;background:var(--yellow);color:var(--black);">FASTAPI</span>
+            <span style="font-size:8px;padding:4px 8px;background:var(--pink);color:var(--black);">OPENAI</span>
+            <span style="font-size:8px;padding:4px 8px;background:var(--yellow);color:var(--black);">DOCKER</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline item: GOITeens -->
       <div style="display:grid;grid-template-columns:140px 1fr;gap:0;position:relative;">
         <!-- Left: date + line -->
         <div style="display:flex;flex-direction:column;align-items:center;padding-top:4px;">
@@ -326,8 +444,8 @@
   <div class="contact-links">
     <a href="mailto:vladyslavsobakar@gmail.com" class="contact-btn">📧 EMAIL</a>
     <a href="tel:+37062112974" class="contact-btn">📞 +37062112974</a>
-    <a href="https://www.linkedin.com/in/vladyslav-sobakar-8a2216312" target="_blank" class="contact-btn">🔗 LINKEDIN</a>
-    <a href="https://github.com/KuKuRuZK" class="contact-btn">🐙 GITHUB</a>
+    <a href="#" class="contact-btn">🔗 LINKEDIN</a>
+    <a href="#" class="contact-btn">🐙 GITHUB</a>
   </div>
 
   
@@ -335,14 +453,20 @@
 
 <!-- FIXED SECTION NAV -->
 <div id="fixedNav" class="fixed-nav">
-  <button id="fixedPrev" class="fixed-nav-btn" onclick="navStep(-1)">◀ <span id="fixedPrevLabel">PREV</span></button>
+  <div class="fixed-nav-left">
+    <button id="fixedPrev" class="fixed-nav-btn" onclick="navStep(-1)">◀ <span id="fixedPrevLabel">PREV</span></button>
+    <span class="fixed-nav-footer">© <span class="footer-year">2026</span> VLADYSLAV SOBAKAR</span>
+  </div>
   <div id="fixedDots" class="fixed-nav-dots"></div>
-  <button id="fixedNext" class="fixed-nav-btn" onclick="navStep(1)"><span id="fixedNextLabel">NEXT</span> ▶</button>
+  <div class="fixed-nav-right">
+    <span class="fixed-nav-footer">MADE WITH <span style="color:var(--pink)">♥</span> & PIXELS</span>
+    <button id="fixedNext" class="fixed-nav-btn" onclick="navStep(1)"><span id="fixedNextLabel">NEXT</span> ▶</button>
+  </div>
 </div>
 
 <!-- FOOTER -->
 <footer>
-  <span>© 2025 VLADYSLAV SOBAKAR</span>
+  <span>© <span class="footer-year">2026</span> VLADYSLAV SOBAKAR</span>
   <span>MADE WITH <span style="color:var(--pink)">♥</span> & PIXELS</span>
 </footer>
 
@@ -360,7 +484,7 @@
         <div class="proj-gallery-main">
           <button class="proj-gallery-arrow left" onclick="galleryStep(-1)">◀</button>
           <div class="proj-gallery-img-wrap">
-            <img id="projGalleryImg" src="" alt="" style="width:100%;height:100%;object-fit:contain;">
+            <img id="projGalleryImg" src="" alt="" onclick="openLightbox()" title="Click to enlarge" style="width:100%;height:100%;object-fit:contain;cursor:zoom-in;">
             <div id="projGalleryEmoji" class="proj-gallery-emoji"></div>
           </div>
           <button class="proj-gallery-arrow right" onclick="galleryStep(1)">▶</button>
@@ -490,6 +614,15 @@
   </div>
 </div>
 
-<script src="script.js"></script>
+<!-- FULLSCREEN IMAGE LIGHTBOX -->
+<div class="lightbox-overlay" id="lightboxOverlay" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">✕</button>
+  <button class="lightbox-arrow left" onclick="event.stopPropagation();lightboxStep(-1)" aria-label="Previous image">◀</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="Project image" onclick="event.stopPropagation()">
+  <button class="lightbox-arrow right" onclick="event.stopPropagation();lightboxStep(1)" aria-label="Next image">▶</button>
+  <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>
+
+<script src="script.js?v=12"></script>
 </body>
 </html>
