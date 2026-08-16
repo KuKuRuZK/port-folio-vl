@@ -4,15 +4,15 @@ const projectData = {
     title:    '🤖 LIN · VOICE ASSISTANT',
     title_uk: '🤖 LIN · ГОЛОСОВИЙ АСИСТЕНТ',
     color: '#241546',
-    desc:    'Lin is a Ukrainian-speaking desktop voice assistant for Windows, built from scratch in Python (~4,600 lines, 140+ commands). It listens with offline Ukrainian speech recognition (Vosk), talks back with neural text-to-speech (edge-tts) and thinks with an LLM brain (Groq / Llama, plus a vision model). Lin lives in the system tray and controls the PC by voice — launching apps, volume, screenshots, clipboard, notes, timers, reminders and a daily morning briefing — while integrating Spotify, Gmail, Google / YouTube and weather, with live system-health monitoring. Runs hidden in the background and auto-restarts via a watchdog.',
-    desc_uk: 'Lin — україномовний голосовий асистент для Windows, написаний з нуля на Python (~4600 рядків, 140+ команд). Слухає через офлайн-розпізнавання української мови (Vosk), відповідає нейронним голосом (edge-tts) і думає за допомогою LLM (Groq / Llama + vision-модель). Живе в системному треї й керує ПК голосом — запуск програм, гучність, скріншоти, буфер, нотатки, таймери, нагадування та ранковий брифінг — інтегрує Spotify, Gmail, Google / YouTube і погоду, плюс моніторинг стану системи. Працює приховано у фоні й авто-рестартує через watchdog.',
+    desc:    'Lin is a Ukrainian-speaking desktop voice assistant for Windows, built from scratch in Python (~5,700 lines, 140+ commands). It listens with offline Ukrainian speech recognition (Vosk), talks back with neural text-to-speech (edge-tts) and thinks with a provider-agnostic LLM layer (Groq, Google Gemini or a local model behind one adapter, plus vision). Lin lives in the system tray and controls the PC by voice — launching apps, volume, screenshots, clipboard, notes, timers, reminders and a daily morning briefing — while integrating Spotify, Gmail, Google / YouTube and weather, with live system-health monitoring. Runs hidden in the background and auto-restarts via a watchdog.',
+    desc_uk: 'Lin — україномовний голосовий асистент для Windows, написаний з нуля на Python (~5700 рядків, 140+ команд). Слухає через офлайн-розпізнавання української мови (Vosk), відповідає нейронним голосом (edge-tts) і думає за допомогою LLM за єдиним адаптером (Groq, Google Gemini або локальна модель, плюс vision). Живе в системному треї й керує ПК голосом — запуск програм, гучність, скріншоти, буфер, нотатки, таймери, нагадування та ранковий брифінг — інтегрує Spotify, Gmail, Google / YouTube і погоду, плюс моніторинг стану системи. Працює приховано у фоні й авто-рестартує через watchdog.',
     bars: [
       { label: 'Voice (STT + TTS)',  label_uk: 'Голос (STT + TTS)',  value: 85 },
       { label: 'LLM Integration',    label_uk: 'Інтеграція LLM',      value: 80 },
       { label: 'Desktop Automation', label_uk: 'Автоматизація ПК',    value: 82 },
     ],
-    tools: ['Python', 'Vosk (UA STT)', 'edge-tts', 'Groq LLM', 'pyautogui', 'pystray', 'tkinter'],
-    link: ''
+    tools: ['Python', 'Vosk (UA STT)', 'edge-tts', 'Groq / Gemini', 'pyautogui', 'pystray', 'tkinter'],
+    link: 'https://github.com/KuKuRuZK/raphael-voice-assistant'
   },
   netflix: {
     title:    '🎬 NETFLIX DASHBOARD',
@@ -40,7 +40,7 @@ const projectData = {
       { label: 'Stylized Shading', label_uk: 'Стилізований шейдинг',value: 80 },
     ],
     tools: ['Blender', 'High-Poly Modelling', 'UV Unwrapping', 'Stylized Shading', 'Character Design'],
-    link: ''
+    link: 'https://github.com/KuKuRuZK/3d-portfolio/tree/main/samurai'
   },
   kimono: {
     title:    '🌸 LOW-POLY KIMONO GIRL',
@@ -54,7 +54,7 @@ const projectData = {
       { label: 'Game-Ready Poly',  label_uk: 'Ігрова оптимізація',  value: 75 },
     ],
     tools: ['Blender', 'Low-Poly Modelling', 'UV Unwrapping', 'Character Turnaround', 'Game-Ready Mesh'],
-    link: ''
+    link: 'https://github.com/KuKuRuZK/3d-portfolio/tree/main/kimono-girl'
   },
   nastalgia: {
     title:    '🕹️ NOT NOSTALGIA',
@@ -67,8 +67,8 @@ const projectData = {
       { label: 'Puzzle & Gameplay', label_uk: 'Пазли та геймплей', value: 72 },
       { label: 'C# Systems',         label_uk: 'C#-системи',        value: 75 },
     ],
-    tools: ['Unity 6', 'C#', 'AI NavMesh', 'Inventory System', '3D Environment', 'Lighting & Sound'],
-    link: ''
+    tools: ['Unity 6', 'C#', 'Trigger Events', 'Inventory System', '3D Environment', 'Lighting & Sound'],
+    link: 'https://github.com/KuKuRuZK/not-nostalgia'
   },
   suwuside: {
     title:    '🌸 sUwUside Hotline',
