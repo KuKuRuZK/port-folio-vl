@@ -3,6 +3,10 @@
 generate_*_application.py
 *_Resume_*.pdf
 *_CoverLetter_*.pdf
+# MASTER це публічне резюме, на нього лінкується сайт, тому воно має
+# потрапляти в репозиторій. Без цього винятку кнопка "Download CV"
+# віддавала б 404 на Netlify, бо файл ніколи не деплоївся.
+!Vladyslav_Sobakar_Resume_MASTER.pdf
 build_jobs_xlsx.py
 resume_b64.txt
 *.xlsx

@@ -1,0 +1,19 @@
+# core.autocrlf=true на цій машині, і git при кожному add попереджав, що
+# замінить LF на CRLF у PDF. Цього разу він сам розпізнав файл як бінарний
+# і нічого не зіпсував, але покладатись на здогадку не варто: одна вдала
+# заміна переводу рядка всередині PDF ламає його беззворотно.
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.ico   binary
+*.woff  binary
+*.woff2 binary
+*.xlsx  binary
+
+# Текстові файли тримаємо з LF у репозиторії, у робочій копії хай буде як зручно
+*.py    text eol=lf
+*.html  text eol=lf
+*.css   text eol=lf
+*.js    text eol=lf
+*.md    text eol=lf

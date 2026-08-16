@@ -15,22 +15,25 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
   <!-- Open Graph (Facebook / LinkedIn / Telegram / Slack) -->
-  <!-- NOTE: after deploying, replace the relative og:url / og:image below with full absolute https URLs
-       (e.g. https://your-domain.com/img/og-image.png) so social link previews always render the image. -->
+  <!-- og:url and og:image MUST stay absolute https URLs: social crawlers do not resolve
+       relative paths, so a relative og:image silently renders a preview with no picture. -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Vladyslav Sobakar — Python Engineer">
   <meta property="og:description" content="Python Engineer in Vilnius. FastAPI backends & AI-agent services, SQL/BigQuery, plus 3D & game-dev projects.">
-  <meta property="og:image" content="img/og-image.png">
+  <meta property="og:image" content="https://port-folio-vl.netlify.app/img/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:url" content="./">
+  <meta property="og:image:alt" content="Vladyslav Sobakar — Python Engineer portfolio">
+  <meta property="og:url" content="https://port-folio-vl.netlify.app/">
   <meta property="og:site_name" content="Vladyslav Sobakar — Portfolio">
+
+  <link rel="canonical" href="https://port-folio-vl.netlify.app/">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Vladyslav Sobakar — Python Engineer">
   <meta name="twitter:description" content="Python Engineer in Vilnius. FastAPI backends & AI-agent services, SQL/BigQuery, plus 3D & game-dev projects.">
-  <meta name="twitter:image" content="img/og-image.png">
+  <meta name="twitter:image" content="https://port-folio-vl.netlify.app/img/og-image.png">
 
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=4">
@@ -71,7 +74,7 @@
   <div class="pixel-character">👾</div>
   <div class="hero-btns" style="position:relative;z-index:2;display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:center;margin-top:8px;">
     <a href="#about" class="press-start-btn" style="margin-top:0;">Press start</a>
-    <a href="Vladyslav_Sobakar_Resume.pdf" download class="cv-btn" style="margin-top:0;margin-left:0;" data-en="▼ DOWNLOAD CV" data-uk="▼ ЗАВАНТАЖИТИ CV">▼ DOWNLOAD CV</a>
+    <a href="Vladyslav_Sobakar_Resume_MASTER.pdf" download class="cv-btn" style="margin-top:0;margin-left:0;" data-en="▼ DOWNLOAD CV" data-uk="▼ ЗАВАНТАЖИТИ CV">▼ DOWNLOAD CV</a>
   </div>
 
   <div class="scroll-indicator">
