@@ -60,8 +60,8 @@ const projectData = {
     title:    '🕹️ NOT NOSTALGIA',
     title_uk: '🕹️ NOT NOSTALGIA',
     color: '#0d1117',
-    desc:    'A first-person 3D horror puzzle game made in Unity. You wake in a dark, fog-filled house and explore it room by room — solving environmental puzzles and collecting the items you need to escape, while a ghost roams the halls. Built on custom C# systems: an inventory, AI navigation (NavMesh) for the ghost, a hide mechanic, scripted room events & jump-scares, and a final escape sequence.',
-    desc_uk: 'Першоособова 3D horror-пазл гра на Unity. Ти прокидаєшся в темному будинку, повному туману, і досліджуєш його кімната за кімнатою — розгадуючи загадки в оточенні та збираючи предмети для втечі, поки коридорами блукає привид. Побудована на власних C#-системах: інвентар, AI-навігація (NavMesh) для привида, механіка схованки, скриптовані події в кімнатах і скрими, фінальна сцена втечі.',
+    desc:    'A first-person 3D horror puzzle game made in Unity. You wake in a dark, fog-filled house and explore it room by room — solving environmental puzzles and collecting the items you need to escape, while a ghost roams the halls. Built on custom C# systems: a ScriptableObject-driven inventory with UI, raycast interaction, a hide mechanic, and trigger-based scare events that check where the player is looking before they fire, so a scare never happens off-screen. Ends with a final escape sequence.',
+    desc_uk: 'Першоособова 3D horror-пазл гра на Unity. Ти прокидаєшся в темному будинку, повному туману, і досліджуєш його кімната за кімнатою — розгадуючи загадки в оточенні та збираючи предмети для втечі, поки коридорами блукає привид. Побудована на власних C#-системах: інвентар на ScriptableObject з інтерфейсом, взаємодія через raycast, механіка схованки і скриптовані скрими, які перед спрацюванням перевіряють, куди дивиться гравець, щоб момент не пройшов повз екран. Фінальна сцена втечі.',
     bars: [
       { label: 'Horror Atmosphere', label_uk: 'Horror-атмосфера', value: 82 },
       { label: 'Puzzle & Gameplay', label_uk: 'Пазли та геймплей', value: 72 },
